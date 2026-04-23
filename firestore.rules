@@ -50,5 +50,16 @@ service cloud.firestore {
                     incoming().createdAt == existing().createdAt;
       allow delete: if isAdmin();
     }
+
+    match /hobbies/{hobbyId} {
+      allow read: if true;
+      allow create: if isAdmin() && isValidArticle(incoming());
+      allow update: if isAdmin() && 
+                    incoming().diff(existing()).affectedKeys().hasAny(['title', 'content', 'coverImage']) &&
+                    incoming().title is string && incoming().title.size() > 0 && incoming().title.size() <= 200 &&
+                    incoming().content is string && incoming().content.size() > 0 && incoming().content.size() <= 50000 &&
+                    incoming().createdAt == existing().createdAt;
+      allow delete: if isAdmin();
+    }
   }
 }

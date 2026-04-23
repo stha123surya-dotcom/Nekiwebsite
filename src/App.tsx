@@ -5,7 +5,9 @@ import Articles from './pages/Articles';
 import AdminLayout from './components/AdminLayout';
 import AdminArticles from './pages/AdminArticles';
 import AdminProjects from './pages/AdminProjects';
+import AdminHobbies from './pages/AdminHobbies';
 import Navigation from './components/Navigation';
+import Hobbies from './pages/Hobbies';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth, db } from './firebase';
 import { MessageCircle } from 'lucide-react';
@@ -36,10 +38,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home isAdmin={isAdmin} />} />
         <Route path="/articles" element={<Articles isAdmin={isAdmin} />} />
+        <Route path="/hobbies" element={<Hobbies isAdmin={isAdmin} />} />
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLayout isAdmin={isAdmin} />}>
           <Route path="articles" element={<AdminArticles />} />
           <Route path="projects" element={<AdminProjects />} />
+          <Route path="hobbies" element={<AdminHobbies />} />
         </Route>
       </Routes>
       

@@ -121,63 +121,6 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
         </div>
       </section>
 
-      {/* Credentials & Bio */}
-      <section id="about" className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid md:grid-cols-12 gap-12">
-            <div className="md:col-span-4">
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Credentials &<br/>Expertise</h2>
-              <div className="w-12 h-1 bg-[#e67e22] mb-8"></div>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                With a dual career path as a Senior Architect and Academic Lecturer, I bring over 15 years of rigorous professional experience to every project, ensuring both aesthetic brilliance and structural soundness.
-              </p>
-            </div>
-            
-            <div className="md:col-span-8 grid sm:grid-cols-2 gap-8">
-              {/* Education */}
-              <div className="bg-white p-8 border border-slate-100 shadow-sm rounded-sm">
-                <h3 className="font-display font-semibold text-xl mb-6 flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-sm">01</span>
-                  Education
-                </h3>
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="font-medium text-slate-900">M.Sc. Construction Management</h4>
-                    <p className="text-sm text-slate-500 mt-1">IOE, Pulchowk Campus • 79%</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-slate-900">B.Arch</h4>
-                    <p className="text-sm text-slate-500 mt-1">IOE, Pulchowk Campus • 79.68%</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Memberships */}
-              <div className="bg-white p-8 border border-slate-100 shadow-sm rounded-sm">
-                <h3 className="font-display font-semibold text-xl mb-6 flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-sm">02</span>
-                  Memberships
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <ChevronRight className="text-[#e67e22] mt-0.5 shrink-0" size={18} />
-                    <span className="text-slate-700">Nepal Engineering Council (NEC) - 'A' Class</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <ChevronRight className="text-[#e67e22] mt-0.5 shrink-0" size={18} />
-                    <span className="text-slate-700">Society of Nepalese Architects (SONA)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <ChevronRight className="text-[#e67e22] mt-0.5 shrink-0" size={18} />
-                    <span className="text-slate-700">Nepal Engineers' Association (NEA)</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Experience Timeline */}
       <section id="experience" className="py-24 bg-slate-900 text-white">
         <div className="max-w-4xl mx-auto px-6 md:px-12">

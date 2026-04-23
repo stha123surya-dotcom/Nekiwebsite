@@ -44,6 +44,7 @@ export default function Navigation({ isAdmin }: { isAdmin: boolean }) {
             <Link to="/" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Home</Link>
             <Link to="/#projects" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Project Vault</Link>
             <Link to="/articles" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Articles</Link>
+            <Link to="/hobbies" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Hobbies</Link>
             
             {isAdmin && (
               <Link to="/admin/articles" className="text-sm font-bold text-white border-b-2 border-[#e67e22]">Admin</Link>
@@ -80,6 +81,7 @@ export default function Navigation({ isAdmin }: { isAdmin: boolean }) {
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Home</Link>
               <Link to="/#projects" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Project Vault</Link>
               <Link to="/articles" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Articles</Link>
+              <Link to="/hobbies" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Hobbies</Link>
               {isAdmin && (
                 <Link to="/admin/articles" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4 text-[#e67e22]">Admin</Link>
               )}

@@ -50,6 +50,12 @@ export default function AdminLayout({ isAdmin }: { isAdmin: boolean }) {
             >
               Manage Projects
             </Link>
+            <Link 
+              to="/admin/hobbies" 
+              className={`px-4 py-2 rounded-sm text-sm font-medium transition-colors ${location.pathname.includes('/hobbies') ? 'bg-slate-900 text-white' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}`}
+            >
+              Manage Hobbies
+            </Link>
           </nav>
         </aside>
 
