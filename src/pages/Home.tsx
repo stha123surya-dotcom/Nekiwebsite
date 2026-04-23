@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { MapPin, Phone, Mail, ArrowRight, ChevronRight, X, Edit, Trash2 } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowRight, ChevronRight, X, Edit, Trash2, MessageCircle } from 'lucide-react';
 import { categories, experience } from '../data';
 import { collection, onSnapshot, doc, deleteDoc } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -36,7 +36,7 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
 
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:neki123mlo@gmail.com?subject=${encodeURIComponent(contactForm.subject || 'Consultation Request')}&body=${encodeURIComponent(`Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\n${contactForm.message}`)}`;
+    const mailtoLink = `mailto:me@neki.com.np?subject=${encodeURIComponent(contactForm.subject || 'Consultation Request')}&body=${encodeURIComponent(`Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\n${contactForm.message}`)}`;
     window.location.href = mailtoLink;
     setIsContactModalOpen(false);
     setContactForm({ name: '', email: '', subject: '', message: '' });
@@ -70,10 +70,10 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#e67e22] selection:text-white pt-24">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-[#e67e22] selection:text-white pt-20">
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+      <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -186,7 +186,7 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
             <p className="text-slate-400">15+ Years of Architectural Excellence</p>
           </div>
 
-          <div className="relative border-l border-slate-700 ml-4 md:ml-0 md:pl-0">
+          <div className="relative border-l border-slate-700 ml-4 md:ml-0 md:pl-0 md:border-l-0 md:before:absolute md:before:inset-y-0 md:before:left-1/2 md:before:w-px md:before:bg-slate-700">
             {experience.map((exp, index) => (
               <motion.div 
                 key={exp.id}
@@ -196,11 +196,21 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
                 transition={{ delay: index * 0.2 }}
                 className="mb-12 relative pl-8 md:pl-0"
               >
-                {/* Timeline Dot */}
-                <div className="absolute left-[-5px] md:left-1/2 md:-ml-[5px] top-1 w-2.5 h-2.5 bg-[#e67e22] rounded-full ring-4 ring-slate-900"></div>
+                {/* Timeline Box */}
+                <div 
+                  className={`absolute top-0 z-10 bg-[#e67e22] text-slate-900 px-4 py-1 rounded-sm shadow-md
+                  text-xs font-bold font-mono tracking-widest uppercase
+                  left-[0px] rounded-l-none
+                  ${index % 2 === 0 
+                      ? 'md:left-1/2 md:-translate-x-full md:rounded-l-sm md:rounded-r-none' 
+                      : 'md:left-1/2 md:translate-x-0 md:rounded-r-sm md:rounded-l-none'
+                  }
+                  `}
+                >
+                  {exp.period}
+                </div>
                 
-                <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right md:ml-0' : 'md:pl-12 md:ml-auto'}`}>
-                  <span className="text-xs font-mono text-[#e67e22] tracking-widest uppercase mb-2 block">{exp.period}</span>
+                <div className={`pt-12 md:pt-12 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right md:ml-0' : 'md:pl-12 md:ml-auto'}`}>
                   <h3 className="font-display text-xl font-semibold mb-1">{exp.role}</h3>
                   <h4 className="text-slate-400 font-medium mb-3">{exp.company}</h4>
                   <p className="text-slate-300 text-sm leading-relaxed">{exp.description}</p>
@@ -331,17 +341,23 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
               <div>
                 <h3 className="text-xs font-mono text-slate-500 tracking-widest uppercase mb-4">Contact Information</h3>
                 <div className="space-y-4">
-                  <a href="mailto:neki123mlo@gmail.com" className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors">
+                  <a href="mailto:me@neki.com.np" className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors">
                     <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Mail size={18} className="text-[#e67e22]" />
                     </div>
-                    neki123mlo@gmail.com
+                    me@neki.com.np
                   </a>
                   <a href="tel:+9779841737795" className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors">
                     <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Phone size={18} className="text-[#e67e22]" />
                     </div>
                     +977-9841737795
+                  </a>
+                  <a href="https://wa.me/9779841737795" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-[#25D366] transition-colors">
+                    <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
+                      <MessageCircle size={18} className="text-[#e67e22]" />
+                    </div>
+                    WhatsApp Direct
                   </a>
                   <div className="flex items-center gap-4 text-slate-300">
                     <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">

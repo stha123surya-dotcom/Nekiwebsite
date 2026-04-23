@@ -28,33 +28,33 @@ export default function Navigation({ isAdmin }: { isAdmin: boolean }) {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'bg-[#2c3e50]/90 backdrop-blur-md shadow-sm py-4' : 'bg-[#2c3e50]/80 backdrop-blur-sm py-5'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <Link to="/" className="font-display font-bold text-2xl tracking-tight text-slate-900">
+          <Link to="/" className="font-display font-bold text-2xl tracking-tight text-white">
             NEKI<span className="text-[#e67e22]">.</span>
           </Link>
           
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-sm font-medium text-slate-600 hover:text-[#e67e22] transition-colors">Home</Link>
-            <Link to="/#projects" className="text-sm font-medium text-slate-600 hover:text-[#e67e22] transition-colors">Project Vault</Link>
-            <Link to="/articles" className="text-sm font-medium text-slate-600 hover:text-[#e67e22] transition-colors">Articles</Link>
+            <Link to="/" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Home</Link>
+            <Link to="/#projects" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Project Vault</Link>
+            <Link to="/articles" className="text-sm font-medium text-slate-200 hover:text-[#e67e22] transition-colors">Articles</Link>
             
             {isAdmin && (
-              <Link to="/admin/articles" className="text-sm font-bold text-slate-900 border-b-2 border-[#e67e22]">Admin</Link>
+              <Link to="/admin/articles" className="text-sm font-bold text-white border-b-2 border-[#e67e22]">Admin</Link>
             )}
 
             {!isAdmin && location.pathname === '/admin' && (
               <button onClick={handleLogin} className="text-sm font-bold text-[#e67e22]">Admin Login</button>
             )}
             {isAdmin && (
-              <button onClick={() => signOut(auth)} className="text-sm font-bold text-red-500">Logout</button>
+              <button onClick={() => signOut(auth)} className="text-sm font-bold text-red-400">Logout</button>
             )}
           </div>
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-slate-900"
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
