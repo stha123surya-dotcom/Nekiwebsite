@@ -30,8 +30,13 @@ export default function Navigation({ isAdmin }: { isAdmin: boolean }) {
     <>
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'bg-[#2c3e50]/90 backdrop-blur-md shadow-sm py-4' : 'bg-[#2c3e50]/80 backdrop-blur-sm py-5'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <Link to="/" className="font-display font-bold text-2xl tracking-tight text-white">
-            NEKI<span className="text-[#e67e22]">.</span>
+          <Link to="/" className="flex items-center transition-transform hover:scale-105">
+            <img 
+              src="https://github.com/stha123surya-dotcom/website-practice/blob/main/Images/1bg-1.png?raw=true" 
+              alt="Neki Logo" 
+              className="h-12 md:h-16 -my-2 md:-my-3 object-contain"
+              style={{ filter: 'brightness(0) saturate(100%) invert(56%) sepia(71%) saturate(1004%) hue-rotate(352deg) brightness(92%) contrast(91%)' }}
+            />
           </Link>
           
           {/* Desktop Nav */}

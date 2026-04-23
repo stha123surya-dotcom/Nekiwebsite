@@ -93,9 +93,9 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
               Senior Architect & M.Sc. Construction Management expert. Bridging the gap between visionary design and structural integrity.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#projects" className="flex items-center gap-2 px-6 py-3 bg-[#e67e22] text-white font-medium rounded-sm hover:bg-[#d35400] transition-colors">
+              <Link to="/#projects" className="flex items-center gap-2 px-6 py-3 bg-[#e67e22] text-white font-medium rounded-sm hover:bg-[#d35400] transition-colors">
                 View Project Vault <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </motion.div>
           
@@ -353,17 +353,11 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
                     </div>
                     +977-9841737795
                   </a>
-                  <a href="https://wa.me/9779841737795" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-[#25D366] transition-colors">
-                    <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
-                      <MessageCircle size={18} className="text-[#e67e22]" />
-                    </div>
-                    WhatsApp Direct
-                  </a>
                   <div className="flex items-center gap-4 text-slate-300">
                     <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <MapPin size={18} className="text-[#e67e22]" />
                     </div>
-                    Ikha-Lakhu-19, Lalitpur, Nepal
+                    LMC-19, Lalitpur, Nepal
                   </div>
                 </div>
               </div>
