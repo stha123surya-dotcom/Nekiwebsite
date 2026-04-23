@@ -1,0 +1,161 @@
+export const projects = [
+  {
+    id: 1,
+    title: 'The British College',
+    category: 'Institutional & Academic',
+    description: 'Comprehensive institutional block design and planning focusing on modern educational needs and sustainable architecture.',
+    image: 'https://images.unsplash.com/photo-1776262438118-18e2a5613eca?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 2,
+    title: 'National College of Engineering',
+    category: 'Institutional & Academic',
+    description: 'State-of-the-art academic building architecture designed to foster innovation and collaborative learning.',
+    image: 'https://sthasurya.com.np/wp-content/uploads/2026/03/baluwatar-2.jpeg',
+  },
+  {
+    id: 3,
+    title: 'Purvanchal University Blocks',
+    category: 'Institutional & Academic',
+    description: 'Expansive university campus blocks integrating functional design with the natural landscape.',
+    image: 'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 4,
+    title: 'Sushil Koirala Prakhar Cancer Hospital',
+    category: 'Healthcare',
+    description: 'Specialized healthcare facility designed with patient well-being and advanced medical requirements in mind.',
+    image: 'https://github.com/stha123surya-dotcom/website-practice/blob/main/Images/Interior101.png?raw=true',
+  },
+  {
+    id: 5,
+    title: 'Dadeldhura Eye Hospital',
+    category: 'Healthcare',
+    description: 'Regional eye care center providing essential ophthalmic services with a focus on accessibility.',
+    image: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 6,
+    title: 'Rapti Eye Hospital',
+    category: 'Healthcare',
+    description: 'Modern regional eye care center designed for efficient patient flow and advanced treatments.',
+    image: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 7,
+    title: 'Mahendranagar Eye Hospital',
+    category: 'Healthcare',
+    description: 'Comprehensive eye care facility serving the far-western region with specialized architectural planning.',
+    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 8,
+    title: 'TU Medical College Complex',
+    category: 'Master Planning',
+    description: 'Comprehensive medical college master plan integrating academic, clinical, and residential zones.',
+    image: 'https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 9,
+    title: 'Nav Jagriti Brihat Fun Park',
+    category: 'Master Planning',
+    description: 'Large-scale recreational park master planning focusing on user experience, safety, and environmental integration.',
+    image: 'https://images.unsplash.com/photo-1523539693385-e5e891eb4465?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 10,
+    title: 'Hotel Daachi',
+    category: 'Commercial & Hospitality',
+    description: 'Luxury hospitality architecture blending traditional aesthetics with modern comfort and amenities.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 11,
+    title: 'Jurassic Park Resort',
+    category: 'Commercial & Hospitality',
+    description: 'Immersive themed resort design offering unique guest experiences through innovative spatial planning.',
+    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 12,
+    title: 'Kathmandu Commercial Complexes',
+    category: 'Commercial & Hospitality',
+    description: 'Various high-end commercial building designs in the heart of Kathmandu, optimizing retail and office spaces.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 13,
+    title: 'Chhetrapati Hospital Dialysis Center',
+    category: 'Interior Design',
+    description: 'Specialized medical interior design prioritizing hygiene, patient comfort, and operational efficiency.',
+    image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 14,
+    title: 'S-Four Trading Corporate Office',
+    category: 'Interior Design',
+    description: 'Modern corporate office interior designed to enhance productivity and reflect brand identity.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 15,
+    title: 'Lumbini Master Plan Extension',
+    category: 'Master Planning',
+    description: 'Strategic extension of the Lumbini master plan, integrating new pilgrim facilities and meditation zones.',
+    image: 'https://images.unsplash.com/photo-1584824486509-112e4181f1c1?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 16,
+    title: 'Pokhara Lakeside Resort',
+    category: 'Commercial & Hospitality',
+    description: 'Eco-friendly resort design overlooking Phewa Lake, emphasizing sustainable materials and local aesthetics.',
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 17,
+    title: 'Kathmandu Valley Urban Renewal',
+    category: 'Master Planning',
+    description: 'Urban renewal project focusing on heritage conservation and modern infrastructure integration.',
+    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 18,
+    title: 'Everest Base Camp Medical Facility',
+    category: 'Healthcare',
+    description: 'High-altitude medical facility designed to withstand extreme weather conditions while providing critical care.',
+    image: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&q=80&w=800',
+  }
+];
+
+export const categories = [
+  'All',
+  'Institutional & Academic',
+  'Healthcare',
+  'Master Planning',
+  'Commercial & Hospitality',
+  'Interior Design',
+];
+
+export const experience = [
+  {
+    id: 1,
+    role: 'Senior Architect',
+    company: 'Shape and Structure Builders',
+    period: 'Present',
+    description: 'Leading architectural design focusing on dome structures and comprehensive master planning for large-scale projects.',
+  },
+  {
+    id: 2,
+    role: 'Academic Lecturer',
+    company: 'Thapathali Campus',
+    period: 'Present',
+    description: 'Imparting knowledge and practical insights to the next generation of architects and engineers.',
+  },
+  {
+    id: 3,
+    role: 'Architect & Project Manager',
+    company: 'Various Firms',
+    period: 'Past 15 Years',
+    description: 'Delivered 50+ successful projects across institutional, healthcare, commercial, and residential sectors.',
+  }
+];

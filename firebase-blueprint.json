@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "An architectural project",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "image": { "type": "string" }
+      },
+      "required": ["title", "category", "description", "image"]
+    },
+    "Article": {
+      "title": "Article",
+      "description": "A published article",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "number", "description": "Timestamp" },
+        "coverImage": { "type": "string" }
+      },
+      "required": ["title", "content", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": { "$ref": "#/entities/Project" },
+      "description": "Store architectural projects"
+    },
+    "/articles/{articleId}": {
+      "schema": { "$ref": "#/entities/Article" },
+      "description": "Store published articles"
+    }
+  }
+}
