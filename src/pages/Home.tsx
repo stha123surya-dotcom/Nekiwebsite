@@ -169,7 +169,17 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Project Vault</h2>
+              <div className="flex flex-wrap items-center gap-4 mb-4">
+                <h2 className="font-display text-3xl md:text-4xl font-bold">Project Vault</h2>
+                <a 
+                  href="https://www.canva.com/design/DAHAXPsgpkM/wdQjKn_TOMcfnx1CzZznbw/view?utm_content=DAHAXPsgpkM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h54d3498274" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-sm hover:bg-[#e67e22] transition-colors"
+                >
+                  View My Portfolio
+                </a>
+              </div>
               <p className="text-slate-600 max-w-xl">A curated selection of projects spanning various expertise pillars.</p>
             </div>
             
