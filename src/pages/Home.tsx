@@ -316,14 +316,6 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
               </div>
             </div>
           </div>
-          
-          <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <p>&copy; {new Date().getFullYear()} Neki Chipalu. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="https://www.linkedin.com/in/neki-chipalu-16368b401/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-              <a href="https://www.facebook.com/neki123" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a>
-            </div>
-          </div>
         </div>
       </footer>
 
