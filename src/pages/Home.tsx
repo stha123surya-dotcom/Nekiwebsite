@@ -172,7 +172,7 @@ export default function Home({ isAdmin }: { isAdmin: boolean }) {
               <div className="flex flex-wrap items-center gap-4 mb-4">
                 <h2 className="font-display text-3xl md:text-4xl font-bold">Project Vault</h2>
                 <a 
-                  href="https://www.canva.com/design/DAHAXPsgpkM/wdQjKn_TOMcfnx1CzZznbw/view?utm_content=DAHAXPsgpkM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h54d3498274" 
+                  href="https://canva.link/163unakod9uc73c" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-sm hover:bg-[#e67e22] transition-colors"
