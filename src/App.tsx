@@ -22,7 +22,7 @@ function GlobalFooter() {
             &copy; {year} Surya Man Shrestha. All Rights Reserved.
           </p>
           <p className="text-xs text-slate-500 max-w-2xl leading-relaxed">
-            <span className="font-semibold">Disclaimer:</span> Designed and created by Surya Man Shrestha. All content, aesthetics, and architectural materials presented on this website are the intellectual property of the webpage owner and are protected by copyright laws. Unauthorized reproduction is strictly prohibited.
+            <span className="font-semibold">Disclaimer:</span> Designed and created by Surya M. Shrestha. All content, aesthetics, and architectural materials presented on this website are the intellectual property of the webpage owner and are protected by copyright laws. Unauthorized reproduction is strictly prohibited.
           </p>
         </div>
         <div className="flex gap-6 shrink-0 mt-4 md:mt-0">
